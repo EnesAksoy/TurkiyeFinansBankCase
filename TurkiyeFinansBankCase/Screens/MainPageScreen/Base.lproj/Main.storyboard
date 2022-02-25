@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dSw-iB-Baa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TurkiyeFinansBankCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hXT-Pk-nXE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WM6-r2-AY6" customClass="FinansView" customModule="TurkiyeFinansBankCase" customModuleProvider="target">
+                                <rect key="frame" x="8" y="96" width="398" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="syB-cB-xIN">
+                                        <rect key="frame" x="8" y="8" width="32" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="QZh-mL-etl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQG-dy-q5Q" customClass="FinansTextField" customModule="TurkiyeFinansBankCase" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="4" width="302" height="32"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="mainPageScreen.searchButtonKey"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfU-60-1h8">
+                                        <rect key="frame" x="358" y="4" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="mZq-aY-W1R"/>
+                                        </constraints>
+                                        <state key="normal" image="removeIcon"/>
+                                        <connections>
+                                            <action selector="deleteButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5B-DM-72C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KfU-60-1h8" secondAttribute="trailing" constant="8" id="22a-tL-Mcj"/>
+                                    <constraint firstAttribute="bottom" secondItem="syB-cB-xIN" secondAttribute="bottom" constant="8" id="3zT-74-LiL"/>
+                                    <constraint firstAttribute="bottom" secondItem="KfU-60-1h8" secondAttribute="bottom" constant="4" id="99d-ck-TBW"/>
+                                    <constraint firstItem="KfU-60-1h8" firstAttribute="top" secondItem="WM6-r2-AY6" secondAttribute="top" constant="4" id="Ddd-BB-bQP"/>
+                                    <constraint firstAttribute="height" constant="40" id="MEh-3t-6oo"/>
+                                    <constraint firstItem="cQG-dy-q5Q" firstAttribute="top" secondItem="WM6-r2-AY6" secondAttribute="top" constant="4" id="TxA-Xv-IAd"/>
+                                    <constraint firstItem="syB-cB-xIN" firstAttribute="leading" secondItem="WM6-r2-AY6" secondAttribute="leading" constant="8" id="WvW-hu-IaU"/>
+                                    <constraint firstItem="KfU-60-1h8" firstAttribute="leading" secondItem="cQG-dy-q5Q" secondAttribute="trailing" constant="8" id="eOk-2m-1dK"/>
+                                    <constraint firstAttribute="bottom" secondItem="cQG-dy-q5Q" secondAttribute="bottom" constant="4" id="gN9-db-Zev"/>
+                                    <constraint firstItem="cQG-dy-q5Q" firstAttribute="leading" secondItem="syB-cB-xIN" secondAttribute="trailing" constant="8" id="k5q-rn-3yk"/>
+                                    <constraint firstItem="syB-cB-xIN" firstAttribute="top" secondItem="WM6-r2-AY6" secondAttribute="top" constant="8" id="wga-48-jnC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3A-Qo-ZFt" customClass="FinansView" customModule="TurkiyeFinansBankCase" customModuleProvider="target">
+                                <rect key="frame" x="8" y="144" width="398" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zjD-dx-Mnd">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jl-Je-qnS">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbK-ha-dvP" customClass="FinansButton" customModule="TurkiyeFinansBankCase" customModuleProvider="target">
+                                                        <rect key="frame" x="4" y="4" width="87.5" height="32"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="mainPageScreen.moviesButtonKey"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="moviesButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHX-SY-T0v"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXr-N6-yfx">
+                                                        <rect key="frame" x="95.5" y="8" width="2" height="24"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="2" id="aGT-4Y-hpV"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="rXr-N6-yfx" secondAttribute="trailing" constant="2" id="0JM-7R-Z8J"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bbK-ha-dvP" secondAttribute="bottom" constant="4" id="0OS-1m-y1v"/>
+                                                    <constraint firstItem="bbK-ha-dvP" firstAttribute="leading" secondItem="0jl-Je-qnS" secondAttribute="leading" constant="4" id="Qeg-7L-vgb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rXr-N6-yfx" secondAttribute="bottom" constant="8" id="Z3r-y7-HQc"/>
+                                                    <constraint firstItem="bbK-ha-dvP" firstAttribute="top" secondItem="0jl-Je-qnS" secondAttribute="top" constant="4" id="sa3-P7-cbj"/>
+                                                    <constraint firstItem="rXr-N6-yfx" firstAttribute="top" secondItem="0jl-Je-qnS" secondAttribute="top" constant="8" id="tdB-Fs-6Mt"/>
+                                                    <constraint firstItem="rXr-N6-yfx" firstAttribute="leading" secondItem="bbK-ha-dvP" secondAttribute="trailing" constant="4" id="yxT-kO-xhJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DwS-Zb-LwO">
+                                                <rect key="frame" x="99.5" y="0.0" width="99.5" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSD-98-icm" customClass="FinansButton" customModule="TurkiyeFinansBankCase" customModuleProvider="target">
+                                                        <rect key="frame" x="4" y="4" width="87.5" height="32"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="mainPageScreen.musicButtonKey"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="musicButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUT-Mo-G60"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsQ-7o-Xsp">
+                                                        <rect key="frame" x="95.5" y="8" width="2" height="24"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="2" id="TJu-JT-hFP"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="fsQ-7o-Xsp" firstAttribute="top" secondItem="DwS-Zb-LwO" secondAttribute="top" constant="8" id="1OY-HZ-Ffc"/>
+                                                    <constraint firstItem="rSD-98-icm" firstAttribute="top" secondItem="DwS-Zb-LwO" secondAttribute="top" constant="4" id="Qnm-iz-bEF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fsQ-7o-Xsp" secondAttribute="bottom" constant="8" id="Rnb-CL-yjw"/>
+                                                    <constraint firstItem="fsQ-7o-Xsp" firstAttribute="leading" secondItem="rSD-98-icm" secondAttribute="trailing" constant="4" id="TlB-Za-FIY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rSD-98-icm" secondAttribute="bottom" constant="4" id="Vmj-eg-9hS"/>
+                                                    <constraint firstItem="rSD-98-icm" firstAttribute="leading" secondItem="DwS-Zb-LwO" secondAttribute="leading" constant="4" id="dDc-Wv-bYg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fsQ-7o-Xsp" secondAttribute="trailing" constant="2" id="zc0-hi-j8g"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rb4-Dg-1IW">
+                                                <rect key="frame" x="199" y="0.0" width="99.5" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ER-Nv-1YA" customClass="FinansButton" customModule="TurkiyeFinansBankCase" customModuleProvider="target">
+                                                        <rect key="frame" x="4" y="4" width="87.5" height="32"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="mainPageScreen.appsButtonKey"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="appsButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rld-aI-Fpe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="od5-Nc-Zrb">
+                                                        <rect key="frame" x="95.5" y="8" width="2" height="24"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="2" id="hZZ-bD-32F"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="od5-Nc-Zrb" firstAttribute="top" secondItem="Rb4-Dg-1IW" secondAttribute="top" constant="8" id="A3u-Vf-9fs"/>
+                                                    <constraint firstItem="3ER-Nv-1YA" firstAttribute="leading" secondItem="Rb4-Dg-1IW" secondAttribute="leading" constant="4" id="Cby-x0-cw9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="od5-Nc-Zrb" secondAttribute="trailing" constant="2" id="DBz-XX-8xA"/>
+                                                    <constraint firstItem="od5-Nc-Zrb" firstAttribute="leading" secondItem="3ER-Nv-1YA" secondAttribute="trailing" constant="4" id="IzR-Aq-0RZ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="od5-Nc-Zrb" secondAttribute="bottom" constant="8" id="Mau-dJ-n8c"/>
+                                                    <constraint firstItem="3ER-Nv-1YA" firstAttribute="top" secondItem="Rb4-Dg-1IW" secondAttribute="top" constant="4" id="lKI-4F-3E4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3ER-Nv-1YA" secondAttribute="bottom" constant="4" id="oTK-NP-bKj"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-AI-a8W">
+                                                <rect key="frame" x="298.5" y="0.0" width="99.5" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngL-89-q7h" customClass="FinansButton" customModule="TurkiyeFinansBankCase" customModuleProvider="target">
+                                                        <rect key="frame" x="4" y="4" width="91.5" height="32"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="mainPageScreen.booksButtonKey"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="booksButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQm-41-7ce"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="ngL-89-q7h" firstAttribute="leading" secondItem="xj2-AI-a8W" secondAttribute="leading" constant="4" id="byp-Xg-JYU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ngL-89-q7h" secondAttribute="bottom" constant="4" id="dRQ-rT-RiI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ngL-89-q7h" secondAttribute="trailing" constant="4" id="tDc-KL-xot"/>
+                                                    <constraint firstItem="ngL-89-q7h" firstAttribute="top" secondItem="xj2-AI-a8W" secondAttribute="top" constant="4" id="w8D-oW-ybT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zjD-dx-Mnd" secondAttribute="trailing" id="0iu-5X-avj"/>
+                                    <constraint firstAttribute="height" constant="40" id="BNS-gG-P8d"/>
+                                    <constraint firstItem="zjD-dx-Mnd" firstAttribute="top" secondItem="y3A-Qo-ZFt" secondAttribute="top" id="Ghh-rm-0lg"/>
+                                    <constraint firstAttribute="bottom" secondItem="zjD-dx-Mnd" secondAttribute="bottom" id="J5x-Cd-UBT"/>
+                                    <constraint firstItem="zjD-dx-Mnd" firstAttribute="leading" secondItem="y3A-Qo-ZFt" secondAttribute="leading" id="fel-8I-1UQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ito-Bi-lOq">
+                                <rect key="frame" x="8" y="192" width="398" height="654"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="qy2-3a-lX6">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eII-3a-8oO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eII-3a-8oO" firstAttribute="trailing" secondItem="ito-Bi-lOq" secondAttribute="trailing" constant="8" id="0Vu-q2-gBs"/>
+                            <constraint firstItem="eII-3a-8oO" firstAttribute="trailing" secondItem="WM6-r2-AY6" secondAttribute="trailing" constant="8" id="Dex-hJ-Whr"/>
+                            <constraint firstItem="eII-3a-8oO" firstAttribute="bottom" secondItem="ito-Bi-lOq" secondAttribute="bottom" constant="16" id="FDx-lG-FTc"/>
+                            <constraint firstItem="WM6-r2-AY6" firstAttribute="top" secondItem="eII-3a-8oO" secondAttribute="top" constant="8" id="NXG-RU-5fc"/>
+                            <constraint firstItem="ito-Bi-lOq" firstAttribute="leading" secondItem="eII-3a-8oO" secondAttribute="leading" constant="8" id="V26-z8-AOo"/>
+                            <constraint firstItem="y3A-Qo-ZFt" firstAttribute="leading" secondItem="eII-3a-8oO" secondAttribute="leading" constant="8" id="WLH-ZQ-dwl"/>
+                            <constraint firstItem="y3A-Qo-ZFt" firstAttribute="top" secondItem="WM6-r2-AY6" secondAttribute="bottom" constant="8" id="a6g-wF-xTD"/>
+                            <constraint firstItem="WM6-r2-AY6" firstAttribute="leading" secondItem="eII-3a-8oO" secondAttribute="leading" constant="8" id="pCC-Vc-DNL"/>
+                            <constraint firstItem="ito-Bi-lOq" firstAttribute="top" secondItem="y3A-Qo-ZFt" secondAttribute="bottom" constant="8" id="u2r-7r-Slg"/>
+                            <constraint firstItem="eII-3a-8oO" firstAttribute="trailing" secondItem="y3A-Qo-ZFt" secondAttribute="trailing" constant="8" id="wvW-mo-r1O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gIj-uU-1zv"/>
+                    <connections>
+                        <outlet property="appsButton" destination="3ER-Nv-1YA" id="rVL-vw-s8i"/>
+                        <outlet property="booksButton" destination="ngL-89-q7h" id="ewx-ZJ-3l9"/>
+                        <outlet property="collectionView" destination="ito-Bi-lOq" id="6dN-qT-850"/>
+                        <outlet property="moviesButton" destination="bbK-ha-dvP" id="P25-ew-xS5"/>
+                        <outlet property="musicButton" destination="rSD-98-icm" id="Gno-dS-feK"/>
+                        <outlet property="searchTextField" destination="cQG-dy-q5Q" id="H9m-ow-4z9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860.86956521739137" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PgM-wG-m67">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dSw-iB-Baa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4BX-J5-pq0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hYI-ov-bXb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7YZ-Ip-rkT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="removeIcon" width="24" height="24"/>
+        <image name="searchIcon" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

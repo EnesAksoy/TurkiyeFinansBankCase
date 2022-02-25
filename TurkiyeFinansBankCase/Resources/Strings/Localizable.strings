@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  TurkiyeFinansBankCase
+
+  Created by ENES AKSOY on 26.02.2022.
+  
+*/
+
+/* MainPageScreen */
+"mainPageScreen.title" = "Search Screen";
+"mainPageScreen.searchButtonKey" = "Search";
+"mainPageScreen.moviesButtonKey" = "Movies";
+"mainPageScreen.musicButtonKey" = "Music";
+"mainPageScreen.appsButtonKey" = "Apps";
+"mainPageScreen.booksButtonKey" = "Books";

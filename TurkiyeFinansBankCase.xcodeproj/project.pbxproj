@@ -3,17 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6160EC56346EB1F5775C743C /* Pods_TurkiyeFinansBankCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516C53AB5CAFB2E1E1222C5 /* Pods_TurkiyeFinansBankCase.framework */; };
 		8F2D307727C980A700FA1E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D307627C980A700FA1E09 /* AppDelegate.swift */; };
 		8F2D307927C980A700FA1E09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D307827C980A700FA1E09 /* SceneDelegate.swift */; };
-		8F2D307B27C980A700FA1E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D307A27C980A700FA1E09 /* ViewController.swift */; };
-		8F2D307E27C980A700FA1E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D307C27C980A700FA1E09 /* Main.storyboard */; };
 		8F2D308027C980AA00FA1E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D307F27C980AA00FA1E09 /* Assets.xcassets */; };
 		8F2D308327C980AA00FA1E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D308127C980AA00FA1E09 /* LaunchScreen.storyboard */; };
+		8F2D309327C9885D00FA1E09 /* WrapperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D309227C9885D00FA1E09 /* WrapperType.swift */; };
+		8F2D309827C988FF00FA1E09 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D309727C988FF00FA1E09 /* StringExtension.swift */; };
+		8F2D309E27C9892E00FA1E09 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D309D27C9892E00FA1E09 /* ResponseModel.swift */; };
+		8F2D30A227C9894300FA1E09 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30A127C9894300FA1E09 /* SearchModel.swift */; };
+		8F2D30A627C989B100FA1E09 /* ObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30A527C989B100FA1E09 /* ObjectStore.swift */; };
+		8F2D30AC27C98C9200FA1E09 /* FinansButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30AB27C98C9200FA1E09 /* FinansButton.swift */; };
+		8F2D30B027C98CC200FA1E09 /* FinansNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30AF27C98CC200FA1E09 /* FinansNavigationItem.swift */; };
+		8F2D30B327C98CE100FA1E09 /* FinansTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30B227C98CE100FA1E09 /* FinansTextField.swift */; };
+		8F2D30B627C98D0000FA1E09 /* FinansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30B527C98D0000FA1E09 /* FinansView.swift */; };
+		8F2D30BB27C98D6900FA1E09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D30BA27C98D6900FA1E09 /* Localizable.strings */; };
+		8F2D30C227C98DBC00FA1E09 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30C127C98DBC00FA1E09 /* DetailViewController.swift */; };
+		8F2D30C527C98E1A00FA1E09 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D30C427C98E1A00FA1E09 /* DetailViewController.xib */; };
+		8F2D30CB27C98E9A00FA1E09 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30CA27C98E9A00FA1E09 /* MainPageViewModel.swift */; };
+		8F2D30CF27C98EBD00FA1E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30CE27C98EBD00FA1E09 /* ViewController.swift */; };
+		8F2D30D727C98EEA00FA1E09 /* MainPageViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30D627C98EEA00FA1E09 /* MainPageViewModelDelegate.swift */; };
+		8F2D30DB27C98F2F00FA1E09 /* MainPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D30DA27C98F2F00FA1E09 /* MainPageCollectionViewCell.xib */; };
+		8F2D30DE27C98F3D00FA1E09 /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30DD27C98F3D00FA1E09 /* MainPageCollectionViewCell.swift */; };
+		8F2D30E427C98F9100FA1E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D30E227C98F9100FA1E09 /* Main.storyboard */; };
+		8F2D30E827C98FBE00FA1E09 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D30E727C98FBE00FA1E09 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +38,28 @@
 		8F2D307327C980A700FA1E09 /* TurkiyeFinansBankCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurkiyeFinansBankCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2D307627C980A700FA1E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F2D307827C980A700FA1E09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8F2D307A27C980A700FA1E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8F2D307D27C980A700FA1E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F2D307F27C980AA00FA1E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F2D308227C980AA00FA1E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F2D308427C980AA00FA1E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F2D309227C9885D00FA1E09 /* WrapperType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperType.swift; sourceTree = "<group>"; };
+		8F2D309727C988FF00FA1E09 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8F2D309D27C9892E00FA1E09 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		8F2D30A127C9894300FA1E09 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		8F2D30A527C989B100FA1E09 /* ObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStore.swift; sourceTree = "<group>"; };
+		8F2D30AB27C98C9200FA1E09 /* FinansButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinansButton.swift; sourceTree = "<group>"; };
+		8F2D30AF27C98CC200FA1E09 /* FinansNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinansNavigationItem.swift; sourceTree = "<group>"; };
+		8F2D30B227C98CE100FA1E09 /* FinansTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinansTextField.swift; sourceTree = "<group>"; };
+		8F2D30B527C98D0000FA1E09 /* FinansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinansView.swift; sourceTree = "<group>"; };
+		8F2D30BA27C98D6900FA1E09 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8F2D30C127C98DBC00FA1E09 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8F2D30C427C98E1A00FA1E09 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = TurkiyeFinansBankCase/Screens/DetailViewController.xib; sourceTree = SOURCE_ROOT; };
+		8F2D30CA27C98E9A00FA1E09 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
+		8F2D30CE27C98EBD00FA1E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F2D30D627C98EEA00FA1E09 /* MainPageViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModelDelegate.swift; sourceTree = "<group>"; };
+		8F2D30DA27C98F2F00FA1E09 /* MainPageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageCollectionViewCell.xib; sourceTree = "<group>"; };
+		8F2D30DD27C98F3D00FA1E09 /* MainPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F2D30E327C98F9100FA1E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F2D30E727C98FBE00FA1E09 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		9516C53AB5CAFB2E1E1222C5 /* Pods_TurkiyeFinansBankCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TurkiyeFinansBankCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCBC0728283D4F69A62DCD9 /* Pods-TurkiyeFinansBankCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurkiyeFinansBankCase.debug.xcconfig"; path = "Target Support Files/Pods-TurkiyeFinansBankCase/Pods-TurkiyeFinansBankCase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +82,6 @@
 				BCCBC0728283D4F69A62DCD9 /* Pods-TurkiyeFinansBankCase.debug.xcconfig */,
 				70B23E1395B41B1DF1E613A9 /* Pods-TurkiyeFinansBankCase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +114,208 @@
 		8F2D307527C980A700FA1E09 /* TurkiyeFinansBankCase */ = {
 			isa = PBXGroup;
 			children = (
-				8F2D307627C980A700FA1E09 /* AppDelegate.swift */,
-				8F2D307827C980A700FA1E09 /* SceneDelegate.swift */,
-				8F2D307A27C980A700FA1E09 /* ViewController.swift */,
-				8F2D307C27C980A700FA1E09 /* Main.storyboard */,
+				8F2D308E27C987E200FA1E09 /* Application */,
+				8F2D309027C9884200FA1E09 /* Common */,
+				8F2D30A427C9896C00FA1E09 /* ObjectStore */,
+				8F2D30A927C98C6C00FA1E09 /* Presentation */,
+				8F2D30B827C98D5200FA1E09 /* Resources */,
+				8F2D30BE27C98D9C00FA1E09 /* Screens */,
+				8F2D30E627C98FAC00FA1E09 /* WebService */,
 				8F2D307F27C980AA00FA1E09 /* Assets.xcassets */,
-				8F2D308127C980AA00FA1E09 /* LaunchScreen.storyboard */,
 				8F2D308427C980AA00FA1E09 /* Info.plist */,
+				8F2D308127C980AA00FA1E09 /* LaunchScreen.storyboard */,
 			);
 			path = TurkiyeFinansBankCase;
+			sourceTree = "<group>";
+		};
+		8F2D308E27C987E200FA1E09 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D308F27C987EB00FA1E09 /* Delegate */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8F2D308F27C987EB00FA1E09 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D307627C980A700FA1E09 /* AppDelegate.swift */,
+				8F2D307827C980A700FA1E09 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		8F2D309027C9884200FA1E09 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D309B27C9891400FA1E09 /* Models */,
+				8F2D309527C988E600FA1E09 /* Extensions */,
+				8F2D309127C9884A00FA1E09 /* Enums */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8F2D309127C9884A00FA1E09 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D309227C9885D00FA1E09 /* WrapperType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8F2D309527C988E600FA1E09 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D309627C988EF00FA1E09 /* StringExtension */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F2D309627C988EF00FA1E09 /* StringExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D309727C988FF00FA1E09 /* StringExtension.swift */,
+			);
+			path = StringExtension;
+			sourceTree = "<group>";
+		};
+		8F2D309B27C9891400FA1E09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D309C27C9891C00FA1E09 /* ResponseModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F2D309C27C9891C00FA1E09 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D309D27C9892E00FA1E09 /* ResponseModel.swift */,
+				8F2D30A127C9894300FA1E09 /* SearchModel.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		8F2D30A427C9896C00FA1E09 /* ObjectStore */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30A527C989B100FA1E09 /* ObjectStore.swift */,
+			);
+			path = ObjectStore;
+			sourceTree = "<group>";
+		};
+		8F2D30A927C98C6C00FA1E09 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30AA27C98C7400FA1E09 /* Controls */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8F2D30AA27C98C7400FA1E09 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30AB27C98C9200FA1E09 /* FinansButton.swift */,
+				8F2D30AF27C98CC200FA1E09 /* FinansNavigationItem.swift */,
+				8F2D30B227C98CE100FA1E09 /* FinansTextField.swift */,
+				8F2D30B527C98D0000FA1E09 /* FinansView.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		8F2D30B827C98D5200FA1E09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30B927C98D5900FA1E09 /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F2D30B927C98D5900FA1E09 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30BA27C98D6900FA1E09 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		8F2D30BE27C98D9C00FA1E09 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30C827C98E7B00FA1E09 /* MainPageScreen */,
+				8F2D30BF27C98DA500FA1E09 /* DetailPageScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8F2D30BF27C98DA500FA1E09 /* DetailPageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30C027C98DAD00FA1E09 /* ViewController */,
+				8F2D30C427C98E1A00FA1E09 /* DetailViewController.xib */,
+			);
+			path = DetailPageScreen;
+			sourceTree = "<group>";
+		};
+		8F2D30C027C98DAD00FA1E09 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30C127C98DBC00FA1E09 /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8F2D30C827C98E7B00FA1E09 /* MainPageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30D927C98F0B00FA1E09 /* CollectionViewCell */,
+				8F2D30D427C98EDD00FA1E09 /* Protocol */,
+				8F2D30CD27C98EAE00FA1E09 /* ViewController */,
+				8F2D30C927C98E8C00FA1E09 /* ViewModel */,
+				8F2D30E227C98F9100FA1E09 /* Main.storyboard */,
+			);
+			path = MainPageScreen;
+			sourceTree = "<group>";
+		};
+		8F2D30C927C98E8C00FA1E09 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30CA27C98E9A00FA1E09 /* MainPageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F2D30CD27C98EAE00FA1E09 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30CE27C98EBD00FA1E09 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8F2D30D427C98EDD00FA1E09 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30D627C98EEA00FA1E09 /* MainPageViewModelDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		8F2D30D927C98F0B00FA1E09 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30DA27C98F2F00FA1E09 /* MainPageCollectionViewCell.xib */,
+				8F2D30DD27C98F3D00FA1E09 /* MainPageCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		8F2D30E627C98FAC00FA1E09 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D30E727C98FBE00FA1E09 /* APIService.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +377,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2D30DB27C98F2F00FA1E09 /* MainPageCollectionViewCell.xib in Resources */,
 				8F2D308327C980AA00FA1E09 /* LaunchScreen.storyboard in Resources */,
+				8F2D30BB27C98D6900FA1E09 /* Localizable.strings in Resources */,
+				8F2D30E427C98F9100FA1E09 /* Main.storyboard in Resources */,
+				8F2D30C527C98E1A00FA1E09 /* DetailViewController.xib in Resources */,
 				8F2D308027C980AA00FA1E09 /* Assets.xcassets in Resources */,
-				8F2D307E27C980A700FA1E09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,29 +435,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F2D307B27C980A700FA1E09 /* ViewController.swift in Sources */,
+				8F2D30E827C98FBE00FA1E09 /* APIService.swift in Sources */,
+				8F2D30CF27C98EBD00FA1E09 /* ViewController.swift in Sources */,
+				8F2D30C227C98DBC00FA1E09 /* DetailViewController.swift in Sources */,
+				8F2D30A627C989B100FA1E09 /* ObjectStore.swift in Sources */,
+				8F2D30D727C98EEA00FA1E09 /* MainPageViewModelDelegate.swift in Sources */,
+				8F2D30B027C98CC200FA1E09 /* FinansNavigationItem.swift in Sources */,
 				8F2D307727C980A700FA1E09 /* AppDelegate.swift in Sources */,
+				8F2D309827C988FF00FA1E09 /* StringExtension.swift in Sources */,
+				8F2D30B627C98D0000FA1E09 /* FinansView.swift in Sources */,
+				8F2D30DE27C98F3D00FA1E09 /* MainPageCollectionViewCell.swift in Sources */,
 				8F2D307927C980A700FA1E09 /* SceneDelegate.swift in Sources */,
+				8F2D30A227C9894300FA1E09 /* SearchModel.swift in Sources */,
+				8F2D30B327C98CE100FA1E09 /* FinansTextField.swift in Sources */,
+				8F2D30CB27C98E9A00FA1E09 /* MainPageViewModel.swift in Sources */,
+				8F2D309E27C9892E00FA1E09 /* ResponseModel.swift in Sources */,
+				8F2D30AC27C98C9200FA1E09 /* FinansButton.swift in Sources */,
+				8F2D309327C9885D00FA1E09 /* WrapperType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8F2D307C27C980A700FA1E09 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F2D307D27C980A700FA1E09 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8F2D308127C980AA00FA1E09 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8F2D308227C980AA00FA1E09 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8F2D30E227C98F9100FA1E09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F2D30E327C98F9100FA1E09 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
